@@ -1,0 +1,10 @@
+{
+    "name": "scholar_ink/payments",
+    "authors": [
+        {
+            "name": "Chao Zhou",
+            "email": "scholar_ink@163.com"
+        }
+    ],
+    "require": {}
+}
