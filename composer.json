@@ -1,7 +1,7 @@
 {
-    "name": "scholar_ink/payments",
-    "type": "library",
+    "name": "scholar/payments",
     "description": "集成支付宝、微信支付等流行的支付接口，后续会持续跟进中",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -9,11 +9,5 @@
             "email": "scholar_ink@163.com"
         }
     ],
-    "require": {
-      "php": ">=5.4"
-    },
-    "autoload": {
-      "psr-4": {"Payment\\": "src/"}
-    },
-    "minimum-stability": "dev"
+    "require": {}
 }
