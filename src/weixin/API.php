@@ -36,6 +36,8 @@ class API {
 
     const API_REPORT = "https://api.mch.weixin.qq.com/payitil/report";//数据上报
 
+    const API_REFUND = "https://api.mch.weixin.qq.com/secapi/pay/refund";//申请退款
+
     /**
      * @Title: report
      * @Description: todo(上报)
