@@ -297,8 +297,6 @@ class WeiXinPayOrder {
             'op_user_id'=>$this->config->mch_id,//用户标识
         );
 
-        $params = $this->validatePayParams($params);
-
         $params['sign'] = $this->api->makeSign($params);
 
         $xml = Helper::ArrayToXml($params);//生成参数xml

@@ -121,6 +121,17 @@ class Helper {
         //要求结果为字符串且输出到屏幕上
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 
+        if($useCert == true){
+            //设置证书
+            //使用证书：cert 与 key 分别属于两个.pem文件
+            $config = new Config();
+
+            curl_setopt($ch,CURLOPT_SSLCERTTYPE,'PEM');
+            curl_setopt($ch,CURLOPT_SSLCERT,$config->ssl_cert_path);
+            curl_setopt($ch,CURLOPT_SSLKEYTYPE,'PEM');
+            curl_setopt($ch,CURLOPT_SSLKEY, $config->ssl_key_path);
+        }
+
         //post提交方式
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
