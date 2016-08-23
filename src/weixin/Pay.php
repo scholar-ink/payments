@@ -275,12 +275,12 @@ class WeiXinPayOrder {
      * @Title: applyRefund
      * @Description: todo(申请退款)
      * @author nipeiquan
-     * @param $transaction_id
+     * @param $out_trade_no
      * @param $total_fee
      * @param $refund_fee
      * @return  void  返回类型
      */
-    public function applyRefund($transaction_id,$total_fee,$refund_fee){
+    public function applyRefund($out_trade_no,$total_fee,$refund_fee){
 
         $url = API::API_REFUND;//微信申请退款接口地址
 
@@ -290,7 +290,7 @@ class WeiXinPayOrder {
             'appid'=>$this->config->app_id,//公众账号ID
             'mch_id'=>$this->config->mch_id,//商户号
             'nonce_str'=>Helper::createNonceStr(32),//随机字符串
-            'transaction_id'=>$transaction_id,//微信订单号
+            'out_trade_no'=>$out_trade_no,//订单号
             'out_refund_no'=>$this->out_trade_no,//商户退款单号
             'total_fee'=>$total_fee,//总金额
             'refund_fee'=>$refund_fee,//退款金额
