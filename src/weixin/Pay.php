@@ -284,6 +284,8 @@ class WeiXinPayOrder {
 
         $url = API::API_REFUND;//微信申请退款接口地址
 
+
+
         $params = array(
             'appid'=>$this->config->app_id,//公众账号ID
             'mch_id'=>$this->config->mch_id,//商户号
