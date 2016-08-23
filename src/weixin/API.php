@@ -24,6 +24,9 @@ class API {
     public function __construct($config)
     {
         $this->config = $config;
+
+
+
     }
 
     //API
@@ -33,7 +36,7 @@ class API {
 
     const API_REPORT = "https://api.mch.weixin.qq.com/payitil/report";//数据上报
 
-
+    const API_REFUND = "https://api.mch.weixin.qq.com/secapi/pay/refund";//申请退款
 
     /**
      * @Title: report
@@ -45,9 +48,7 @@ class API {
      */
     private function report($params, $timeOut = 1)
     {
-
-
-        //检测必填参数111
+        //检测必填参数
         if(empty($params['interface_url'])) {
             throw new Exception("接口URL，缺少必填参数interface_url！");
         }
