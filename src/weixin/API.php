@@ -91,6 +91,8 @@ class API {
 
         }
 
+
+
         //如果仅失败上报
         if($this->config->report_level == 1 &&
             array_key_exists("return_code", $data) &&
