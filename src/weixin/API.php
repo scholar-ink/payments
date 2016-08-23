@@ -46,7 +46,8 @@ class API {
     private function report($params, $timeOut = 1)
     {
 
-        //检测必填参数
+
+        //检测必填参数111
         if(empty($params['interface_url'])) {
             throw new Exception("接口URL，缺少必填参数interface_url！");
         }
