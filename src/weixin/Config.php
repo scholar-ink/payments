@@ -30,14 +30,14 @@ class Config
     /**
      *
      * $options = [
-        'debug'     => true,
-        'app_id'    => 'wx3cf0f39249eb0e60',
-        'secret'    => 'f1c242f4f28f735d4687abb469072a29',
-        'token'     => 'easywechat',
-        'log' => [
-            'level' => 'debug',
-            'file'  => '/tmp/easywechat.log',
-            ],
+            'app_id'    => 'wx93916f5d17e2d889',
+            'app_secret'    => '76ea1955d0d8c8d660e9a90b9b0e0f54',
+            'mch_id'    => '1337548901',
+            'key'    => '8b5d84f998714434114688a4e195d2fc',
+            'notify_url'    => '8b5d84f998714434114688a4e195d2fc',
+            'key'    => '8b5d84f998714434114688a4e195d2fc',
+            'pay_type'    => 'JSAPI',
+            'report_level'     => 0,
         ];
      *
      */
