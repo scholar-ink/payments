@@ -26,7 +26,6 @@ class API {
         $this->config = $config;
 
 
-
     }
 
     //API
@@ -95,8 +94,6 @@ class API {
             return;
 
         }
-
-
 
         //如果仅失败上报
         if($this->config->report_level == 1 &&
