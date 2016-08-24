@@ -35,9 +35,9 @@ class WeiXinPayOrder {
 
     public function __construct($config,$out_trade_no,$body,$total_fee) {
 
-        $this->config = $config;
+        $this->config = new Config($config);
 
-        $this->api = new API($config);
+        $this->api = new API($this->config);
 
         $this->out_trade_no = $out_trade_no;
         $this->body= $body;
