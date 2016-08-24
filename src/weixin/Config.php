@@ -34,7 +34,7 @@ class Config
             'app_secret'    => '76ea1955d0d8c8d660e9a90b9b0e0f54',
             'mch_id'    => '1337548901',
             'key'    => '8b5d84f998714434114688a4e195d2fc',
-            'notify_url'    => '8b5d84f998714434114688a4e195d2fc',
+            'notify_url'    => 'http://app.ttouch.com.cn/shangshe/frontend/web/site/call-back',
             'key'    => '8b5d84f998714434114688a4e195d2fc',
             'pay_type'    => 'JSAPI',
             'report_level'     => 0,
