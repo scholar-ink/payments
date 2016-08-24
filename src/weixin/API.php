@@ -25,7 +25,6 @@ class API {
     {
         $this->config = $config;
 
-
     }
 
     //API
